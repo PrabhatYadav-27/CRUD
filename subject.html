@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="subject.css">
+<title>Subject</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Subjects</h2>
+    <form>
+      <label for="name">Subject Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter subject name">
+
+      <label for="code">Code</label>
+      <input type="text" id="code" name="code" placeholder="Enter code">
+
+      <label>Type of Subject</label>
+      <input type="radio" id="theory" name="courseType" value="theory">
+      <label for="theory">Theory</label>
+      <input type="radio" id="practical" name="courseType" value="practical">
+      <label for="practical">Practical</label>
+
+      <button id="submitBtn" type="button">Submit</button>
+    </form>
+
+    <ul id="subjectsList"></ul>
+  </div>
+
+  <script src="subject.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Studetns
+    </title>
+    <link rel="stylesheet" href="students.css">
+</head>
+
+<body>
+    <h1>Students</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>D.O.B</label>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                    <div>
+                        <label>Mobile</label>
+                        <input type="tel" name="telephone" id="telephone">
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentslist">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>D.O.B</th>
+                            <th>Mobile</th>
+                            <th>Address</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="students.js"></script>
+</body>
+
+</html>
